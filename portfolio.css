@@ -13,17 +13,19 @@ header{
 .nav{
     margin: 0 auto;
     max-width: 1200px;
-    height: 68px;
+    height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav h3{
     color: #fff;
+    font-size: 18px;
 }
 .navMenu li{
     padding: 26px 20px;
     transition: all .3s linear;
+    font-size: 18px;
 }
 .navMenu{
     display: flex;
@@ -72,7 +74,7 @@ section{
     .navMenu{
         position: fixed;
         display: none;
-        top: 68px;
+        top: 72px;
         left: 50%;
         transform: translateX(-50%);
         background-color: rgba(128, 128, 128, 0.6);
@@ -82,7 +84,7 @@ section{
         padding: 1.2em 0;
     }
     .navMenu.active{
-        top: 68px;
+        top: 72px;
         display: block;
     }
 }
@@ -153,9 +155,9 @@ section{
 .homerightText{
     position: absolute;
     z-index: 3;
-    left: 50%;
+    left: 56%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-56%, -50%);
 }
 .homeRight h4{
     color: rgba(15, 30, 18);
@@ -164,7 +166,6 @@ section{
     letter-spacing: 1px;
     font-size: 68px;
     font-weight: bold;
-    text-transform: uppercase;
     margin-bottom: .2em;
 }
 .cakeresume,
@@ -182,17 +183,17 @@ section{
 /* home */
 .home h5,
 .app h5{
-    font-size: 22px;
+    font-size: 24px;
     width: 100%;
     text-align: center;
-    height: 68px;
-    line-height: 68px;
+    height: 72px;
+    line-height: 72px;
     background-color: #fff;
-    font-weight: 500;
+    font-weight: 400;
 }
 .homeBox{
     width: 100%;
-    height: calc(100vh - 68px);
+    height: calc(100vh - 72px);
 }
 .topBox,
 .topButtom{
@@ -206,7 +207,6 @@ section{
     height: 100%;
     text-align: center;
     display: inline-block;
-    vertical-align: top;
     box-sizing: border-box;
 }
 .topBox li::before,
@@ -246,8 +246,10 @@ section{
 }
 .logoText,
 .pText,
-.bText{
-    font-size: 18px;
+.bText,
+.imgText{
+    font-size: 16px;
+    line-height: 26px;
 }
 .imgWall{
     background-color: rgb(250, 250, 250);
@@ -258,11 +260,9 @@ section{
     height: 100%;
     object-fit: cover;
 }
-.imgText{
-    font-size: 16px;
-    padding: 0 4em;
-    line-height: 22px;
-}
+.logoText p,
+.pText p,
+.bText p,
 .imgText p{
     display: inline-block;
 }
@@ -272,7 +272,7 @@ section{
 }
 .app{
     width: 100%;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(180, 180, 180);
 }
 .app ul{
     display: flex;
@@ -293,7 +293,7 @@ section{
     height: 164em;
     background-image: url(image/webbg.jpg);
     background-repeat: repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .webWrap{
     width: 100%;
@@ -313,29 +313,25 @@ section{
 .lineText3,
 .lineText4,
 .lineText5{
-    font-size: 26px;
+    font-size: 28px;
     position: absolute;
     letter-spacing: 1px;
     white-space: nowrap;
+    top: -16px;
 }
 .lineText1{
-    top: -12px;
     left: -150px;
 }
 .lineText2{
-    top: -12px;
     left: 150px;
 }
 .lineText3{
-    top: -12px;
     left: -150px;
 }
 .lineText4{
-    top: -12px;
     left: 150px;
 }
 .lineText5{
-    top: -12px;
     left: -150px;
 }
 .branch1,
@@ -368,6 +364,13 @@ section{
     top: 1090px;
     left: -120px;
 }
+.personaImg{
+    position: absolute;
+    width: 18em;
+    height: auto;
+    top: 70px;
+    left: 6em;
+}
 .wireImg1{
     position: absolute;
     width: 8em;
@@ -397,6 +400,7 @@ section{
     top: 840px;
     left: 16em;
 }
+.personaImg img,
 .protoImg1 img,
 .protoImg2 img,
 .wireImg1 img,
@@ -416,11 +420,11 @@ section{
     margin: 0 auto;
 }
 .floraText{
-    font-size: 26px;
+    font-size: 28px;
     width: 100%;
     text-align: center;
-    height: 68px;
-    line-height: 68px;
+    height: 72px;
+    line-height: 72px;
     font-weight: 500;
 }
 .floraWrap p{
@@ -428,7 +432,7 @@ section{
     width: 100%;
     height: 26px;
     line-height: 26px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .floraImg{
     width: 100%;
@@ -447,7 +451,7 @@ section{
 .fcart{
     position: relative;
     width: 30%;
-    padding: 12px;
+    padding: 6px;
     box-sizing: border-box;
 }
 .entw img,
@@ -473,12 +477,12 @@ section{
 }
 .aboutWrap{
     width: 100%;
-    height: 26em;
+    height: 28em;
     background-color: #fff;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 }
 .aboutContent{
     display: flex;
@@ -487,7 +491,7 @@ section{
     justify-content: center;
 }
 .person{
-    width: 14em;
+    width: 16em;
     padding-top: 2em;
 }
 .person img{
@@ -495,29 +499,31 @@ section{
     display: block;
 }
 .aboutText{
-    padding: 2em 0 0 10em;
+    padding: 3em 0 0 6em;
     color: #333;
+    display: flex;
 }
-.aboutMe h5{
-    font-size: 26px;
-    letter-spacing: 1px;
+.aboutMe{
+    width: 320px;
+}
+.contactMe{
+    width: 380px;
+    padding-left: 8em;
+}
+.aboutMe h5,
+.contactMe h5{
+    font-size: 28px;
     font-weight: 500;
 }
 .aboutMe p{
-    font-size: 14px;
-    padding: 1.2em 0;
-    line-height: 22px;
-}
-.contactMe h5{
-    font-size: 26px;
-    letter-spacing: 1px;
-    padding-top: 2em;
-    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    padding-top: 2.2em;
 }
 .contactMe p{
-    font-size: 14px;
-    padding: 1.2em 0;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 2em;
 }
 .contactButton{
     font-size: 14px;
