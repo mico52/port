@@ -26,6 +26,7 @@ header{
     padding: 26px 20px;
     transition: all .3s linear;
     font-size: 18px;
+    box-sizing: border-box;
 }
 .navMenu{
     display: flex;
@@ -65,6 +66,9 @@ section{
     .active{
         background: transparent;
     }
+    .blank{
+        display: none;
+    }
     .hamburger{
         display: block;
         background-color: transparent;
@@ -89,12 +93,20 @@ section{
     }
     .navMenu li{
         width: 100%;
-        background-color: rgba(15, 30, 18, 0.9);
+        background-color: rgba(15, 30, 18);
         text-align: center;
     }
     .navMenu.active{
         top: 72px;
         display: block;
+    }
+}
+@media(max-width:480px){
+    .nav{
+        max-width: 300px;
+    }
+    .nav h3{
+        font-size: 16px;
     }
 }
 /* top */
@@ -127,7 +139,7 @@ section{
 .leftimgOne,
 .leftimgTwo{
     background-image: url(image/home.jpg);
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-size: contain;
     background-position: left center;
     height: 100vh;
@@ -147,7 +159,7 @@ section{
 .rightimgOne,
 .rightimgTwo{
     background-image: url(image/homeblack.jpg);
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-size: contain;
     background-position: right center;
     height: 50vh;
@@ -206,6 +218,19 @@ section{
         margin-bottom: 8px;
     }
 }
+@media(max-width:480px){
+    .homeCover{
+        display: block;
+    }
+    .homeLeft,
+    .homeRight{
+        height: 50vh;
+        width: 100%;
+    }
+    .rightimgTwo{
+        display: none;
+    }
+}
 /* home */
 .home h5,
 .app h5{
@@ -253,7 +278,8 @@ section{
 }
 .logoImg img,
 .bImg img,
-.pImg img{
+.pImg img,
+.imgWall img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -281,16 +307,31 @@ section{
     background-color: rgb(250, 250, 250);
     box-sizing: border-box;
 }
-.imgWall img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .logoText p,
 .pText p,
 .bText p,
 .imgText p{
     display: inline-block;
+}
+@media(max-width:480px){
+    .homeBox{
+        height: auto;
+    }
+    .topBox,
+    .topButtom{
+        display: inline-block;
+    }
+    .topBox li,
+    .topButtom li{
+        width: 100%;
+        height: 16em;
+    }
+    .logoText,
+    .imgText,
+    .pText,
+    .bText{
+        height: 10em !important;
+    }
 }
 /* app */
 #app{
@@ -313,6 +354,19 @@ section{
 .app li img{
     width: 90%;
 }
+@media(max-width:480px){
+    .app ul {
+        flex-wrap: wrap;
+    }
+    .app li{
+        width: 50%;
+        padding: 0;
+        text-align: center;
+    }
+    .app li img{
+        width: 100%;
+    }
+}
 /* web */
 .web{
     width: 100%;
@@ -320,6 +374,9 @@ section{
     background-image: url(image/webbg.jpg);
     background-repeat: repeat;
     background-size: contain;
+}
+.smallWeb{
+    display: none;
 }
 .webWrap{
     width: 100%;
@@ -449,6 +506,46 @@ section{
         left: -13em;
     }
 }
+@media(max-width:480px){
+    .webWrap{
+        height: auto;
+        padding-bottom: 1.8em;
+    }
+    .middleLine{
+        display: none;
+    }
+    .smallWeb{
+        display: block;
+    }
+    .smalltextP,
+    .smalltextF,
+    .smalltextU,
+    .smalltextW,
+    .smalltextPR{
+        font-size: 24px;
+        padding: 1.2em 0 .6em 0;
+        text-align: left;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        border-bottom: #333 2px solid;
+    }
+    .smallP,
+    .smallW,
+    .smallPR{
+        width: 100%;
+        height: 18em;
+        padding-top: .3em;
+    }
+    .smallP img,
+    .smallW img,
+    .smallPR img{
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+}
 /* flora */
 .flora{
     width: 100%;
@@ -458,6 +555,10 @@ section{
 .floraWrap{
     max-width: 1200px;
     margin: 0 auto;
+}
+.smallLogin,
+.smallCart{
+    display: none;
 }
 .floraText{
     font-size: 28px;
@@ -470,9 +571,9 @@ section{
 .floraWrap p{
     text-align: center;
     width: 100%;
-    height: 26px;
-    line-height: 26px;
+    padding-bottom: 1.2em;
     font-size: 16px;
+    line-height: 26px;
 }
 .floraImg{
     width: 100%;
@@ -507,6 +608,50 @@ section{
     display: block;
     height: auto;
 }
+@media(max-width:480px){
+    .web{
+        height: 183em;
+    }
+    .flora{
+        height: 105em;
+    }
+    .floraWrap p{
+        max-width: 90%;
+        margin: auto;
+    }
+    .floraImg{
+        display: block;
+        height: auto;
+    }
+    .smallLogin,
+    .smallCart{
+        display: block;
+    }
+    .entw,
+    .fselect,
+    .smallLogin,
+    .smallCart{
+        width: 100%;
+        padding: 6px 0;
+        max-width: 90%;
+        margin: auto;
+    }
+    .entw img,
+    .fselect img,
+    .smallLogin img,
+    .smallCart img{
+        width: 100%;
+        display: block;
+    }
+    .fcountry,
+    .fsearch,
+    .flogin,
+    .fregister,
+    .fproduct,
+    .fcart{
+        display: none;
+    }
+}
 /* about */
 #about{
     width: 100%;
@@ -515,6 +660,9 @@ section{
     background-repeat: repeat;
     background-size: cover;
     position: relative;
+}
+.smallAbout{
+    display: none;
 }
 .aboutWrap{
     width: 100%;
@@ -574,4 +722,60 @@ section{
     bottom: 2px;
     left: 50%;
     transform: translateX(-50%);
+}
+@media(max-width:480px){
+    #about{
+        height: 60em;
+    }
+    .aboutWrap{
+        display: none;
+    }
+    .smallAbout{
+        display: block;
+        padding-top: 2.8em;
+    }
+    .smallAboutme{
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+    }
+    .smallAboutme h5{
+        font-size: 26px;
+    }
+    .smallAboutme p{
+        font-size: 16px;
+        padding: .8em 0;
+        line-height: 26px;
+    }
+    .smallPerson{
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+    }
+    .smallPerson img{
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .smallContact{
+        width: 100%;
+        height: 20em;
+        background-color: #fff;
+        margin-top: 2.2em;
+    }
+    .smallContact h5{
+        font-size: 26px;
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+        padding-top: .8em;
+    }
+    .smallContact p{
+        font-size: 17px;
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+        padding: .8em 0;
+        line-height: 26px;
+    }
 }
