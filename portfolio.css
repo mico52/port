@@ -59,10 +59,15 @@ section{
 .active{
     background: rgba(0, 0, 0);
 }
-@media(max-width:768px){
+@media(max-width:992px){
     .nav{
-        max-width: 700px;
+        max-width: 90%;
     }
+}
+@media(max-width:768px){
+    /* .nav{
+        max-width: 700px;
+    } */
     .active{
         background: transparent;
     }
@@ -102,9 +107,9 @@ section{
     }
 }
 @media(max-width:480px){
-    .nav{
-        max-width: 300px;
-    }
+    /* .nav{
+        max-width: 90%;
+    } */
     .nav h3{
         font-size: 16px;
     }
@@ -201,24 +206,7 @@ section{
     font-weight: bold;
     letter-spacing: 1px;
 }
-@media(max-width:768px){
-    .homeRight h4{
-        font-size: 38px;
-        line-height: 48px;
-    }
-    .homeLeft h5{
-        font-size: 38px;
-    }
-    .cakeresume,
-    .linkedin{
-        height: 3em;
-        width: 10em;
-        font-size: 12px;
-        border-radius: 1px;
-        margin-bottom: 8px;
-    }
-}
-@media(max-width:480px){
+@media(max-width:992px){
     .homeCover{
         display: block;
     }
@@ -230,6 +218,51 @@ section{
     .rightimgTwo{
         display: none;
     }
+}
+@media(max-width:768px){
+    .homeRight h4{
+        font-size: 56px;
+        line-height: 56px;
+    }
+    .homeLeft h5{
+        font-size: 56px;
+    }
+    .cakeresume,
+    .linkedin{
+        height: 3em;
+        width: 10em;
+        font-size: 12px;
+        border-radius: 1px;
+        margin-bottom: 8px;
+    }
+}
+@media(max-width:480px){
+    /* .homeCover{
+        display: block;
+    }
+    .homeLeft,
+    .homeRight{
+        height: 50vh;
+        width: 100%;
+    }
+    .rightimgTwo{
+        display: none;
+    } */
+    .homeRight h4{
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .homeLeft h5{
+        font-size: 38px;
+    }
+    /* .cakeresume,
+    .linkedin{
+        height: 3em;
+        width: 10em;
+        font-size: 12px;
+        border-radius: 1px;
+        margin-bottom: 8px;
+    } */
 }
 /* home */
 .home h5,
@@ -313,10 +346,24 @@ section{
 .imgText p{
     display: inline-block;
 }
-@media(max-width:480px){
+@media(max-width:992px){
     .homeBox{
         height: auto;
     }
+    .topBox,
+    .topButtom{
+        flex-wrap: wrap;
+    }
+    .topBox li,
+    .topButtom li{
+        width: 50%;
+        height: auto;
+    }
+}
+@media(max-width:480px){
+    /* .homeBox{
+        height: auto;
+    } */
     .topBox,
     .topButtom{
         display: inline-block;
@@ -354,18 +401,31 @@ section{
 .app li img{
     width: 90%;
 }
-@media(max-width:480px){
+@media(max-width:992px){
     .app ul {
         flex-wrap: wrap;
     }
     .app li{
-        width: 50%;
+        width: 30%;
         padding: 0;
         text-align: center;
     }
     .app li img{
         width: 100%;
     }
+}
+@media(max-width:480px){
+    /* .app ul {
+        flex-wrap: wrap;
+    } */
+    .app li{
+        width: 50%;
+        /* padding: 0;
+        text-align: center; */
+    }
+    /* .app li img{
+        width: 100%;
+    } */
 }
 /* web */
 .web{
@@ -492,18 +552,21 @@ section{
     height: 100%;
     object-fit: contain;
 }
-@media(max-width:768px){
+@media(max-width:992px){
+    .personaImg{
+        left: 3em;
+    }
     .protoImg1{
-        left: 6em;
+        left: 3em;
     }
     .protoImg2{
-        left: 14em;
+        left: 12em;
     }
     .wireImg1{
-        left: -22em;
+        left: -20em;
     }
     .wireImg2{
-        left: -13em;
+        left: -10em;
     }
 }
 @media(max-width:480px){
@@ -608,6 +671,18 @@ section{
     display: block;
     height: auto;
 }
+@media(max-width:992px){
+    .entw,
+    .fcountry,
+    .fsearch,
+    .fselect,
+    .flogin,
+    .fregister,
+    .fproduct,
+    .fcart{
+        width: 32%;
+    }
+}
 @media(max-width:480px){
     .web{
         height: 183em;
@@ -661,7 +736,8 @@ section{
     background-size: cover;
     position: relative;
 }
-.smallAbout{
+.smallAbout,
+.middleAbout{
     display: none;
 }
 .aboutWrap{
@@ -727,7 +803,8 @@ section{
     #about{
         height: 60em;
     }
-    .aboutWrap{
+    .aboutWrap,
+    .middleAbout{
         display: none;
     }
     .smallAbout{
