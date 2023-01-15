@@ -460,6 +460,7 @@ section{
     position: absolute;
     letter-spacing: 1px;
     white-space: nowrap;
+    text-align: left;
     top: -16px;
 }
 .lineText1{
@@ -567,6 +568,9 @@ section{
     }
     .wireImg2{
         left: -10em;
+    }
+    .lineText2{
+        white-space: normal;
     }
 }
 @media(max-width:480px){
