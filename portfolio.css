@@ -803,6 +803,48 @@ section{
     left: 50%;
     transform: translateX(-50%);
 }
+@media(max-width:992px){
+    .middleAbout{
+        display: block;
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+    }
+    .aboutWrap{
+        display: none;
+    }
+    .middleAboutme{
+        padding-top: 6em;
+        display: flex;
+    }
+    .middlePerson{
+        width: 35%;
+    }
+    .middlePerson img{
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .middleText{
+        width: 65%;
+        padding-left: 2.2em;
+    }
+    .middleText h5{
+        font-size: 26px;
+    }
+    .middleText p,
+    .middleContact p{
+        padding: 1.2em 0;
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .middleContact{
+        padding-top: 5em;
+    }
+    .middleContact h5{
+        font-size: 26px;
+    }
+}
 @media(max-width:480px){
     #about{
         height: 60em;
